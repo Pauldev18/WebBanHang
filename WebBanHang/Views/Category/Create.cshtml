@@ -1,0 +1,25 @@
+﻿@model Category
+<h1>Create Category</h1>
+<hr/>
+<form method="post">
+<div class="border p-4 mt-4">
+        <div class="form-floating mb-3">
+            <input  class="form-control" id="floatingInput" placeholder="" asp-for="Name">
+            <label for="floatingInput">Category Name</label>
+        </div>
+        <div class="form-floating">
+            <input  class="form-control" id="floatingPassword" placeholder="" asp-for="DisplayOrder">
+            <label for="floatingPassword">Display Order</label>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <button type="submit" class="btn btn-success form-control">Create</button>
+            </div>
+            <div class="col-6">
+                <a asp-action="Index" asp-controller="Category" class="btn btn-primary form-control ">Back to list</a>
+            </div>
+        </div>
+        
+        
+</div>
+</form>
