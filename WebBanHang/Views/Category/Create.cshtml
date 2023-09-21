@@ -6,10 +6,12 @@
         <div class="form-floating mb-3">
             <input  class="form-control" id="floatingInput" placeholder="" asp-for="Name">
             <label for="floatingInput">Category Name</label>
+            <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="form-floating">
             <input  class="form-control" id="floatingPassword" placeholder="" asp-for="DisplayOrder">
             <label for="floatingPassword">Display Order</label>
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
         <div class="row mt-4">
             <div class="col-6">
